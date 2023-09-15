@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>
     <h1>Etch-a-Sketch</h1>
-    <div class="header">
+    <div class='header'>
         <h6>Select Size</h6>
-        <button>Select</button>
+        <button class='selectSize'>Select</button>
     </div>
-    <div class="grid">
+    <p class='message'></p>
+    <p class='draw'></p>
+    <div class='grid'>
     </div>
-    <div class="footer">
-        <button>Black</button>
-        <button>Rainbow</button>
-        <button>Clear</button>
+    <div class='footer'>
+        <button class="black-btn" onclick="setColor('black')">Black</button>
+        <button class="rainbow-btn" onclick="setColor('random')">Rainbow</button>
+        <button class="clear-btn" onclick="clearBoard()">Clear</button>
     </div>
-    <script src="script.js"></script>
+    <script src='script.js'></script>
 </body>
 </html>
